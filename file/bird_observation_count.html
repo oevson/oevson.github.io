@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="c4e155f0-2c58-4cfc-bd91-d13843686411" data-root-id="p2315" style="display: contents;"></div>
+  
+    <script type="application/json" id="p2361">
+      {"873b912a-6a28-48da-88a3-347e00636141":{"version":"3.2.1","title":"Bokeh Application","roots":[{"type":"object","name":"Figure","id":"p2315","attributes":{"width":800,"height":650,"x_range":{"type":"object","name":"FactorRange","id":"p2325","attributes":{"factors":["Regulus regulus","Erithacus rubecula","Phylloscopus trochilus","Cyanistes caeruleus","Parus major","Acanthis flammea","Phylloscopus collybita","Acrocephalus scirpaceus","Spinus spinus","Ficedula hypoleuca","Sylvia atricapilla","Prunella modularis","Ficedula albicollis","Fringilla montifringilla","Emberiza schoeniclus","Troglodytes troglodytes","Chloris chloris","Fringilla coelebs","Sylvia curruca","Acrocephalus schoenobaenus"]}},"y_range":{"type":"object","name":"DataRange1d","id":"p2317"},"x_scale":{"type":"object","name":"CategoricalScale","id":"p2326"},"y_scale":{"type":"object","name":"LinearScale","id":"p2327"},"title":{"type":"object","name":"Title","id":"p2318","attributes":{"text":"Bird observation count in Sweden","text_font_size":"15pt","align":"center"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p2351","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p2312","attributes":{"selected":{"type":"object","name":"Selection","id":"p2313","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p2314"},"data":{"type":"map","entries":[["species",["Regulus regulus","Erithacus rubecula","Phylloscopus trochilus","Cyanistes caeruleus","Parus major","Acanthis flammea","Phylloscopus collybita","Acrocephalus scirpaceus","Spinus spinus","Ficedula hypoleuca","Sylvia atricapilla","Prunella modularis","Ficedula albicollis","Fringilla montifringilla","Emberiza schoeniclus","Troglodytes troglodytes","Chloris chloris","Fringilla coelebs","Sylvia curruca","Acrocephalus schoenobaenus"]],["occurrences",{"type":"ndarray","array":{"type":"bytes","data":"lH8EAAdlBAAFNQQAEg4EAPECBAAJ3gIAO1UBAC1VAQASUgEA2UcBAP4lAQAIGwEALhQBAM4IAQBe7gAAOdgAANyxAADyrgAA8KcAAHahAAA="},"shape":[20],"dtype":"int32","order":"little"}],["colors",["lightblue","lightblue","lightblue","lightblue","lightblue","lightblue","lightblue","lightblue","lightblue","lightblue","lightblue","lightblue","pink","lightblue","lightblue","lightblue","lightblue","lightblue","lightblue","lightblue"]]]}}},"view":{"type":"object","name":"CDSView","id":"p2352","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p2353"}}},"glyph":{"type":"object","name":"VBar","id":"p2348","attributes":{"x":{"type":"field","field":"species"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"occurrences"},"line_color":{"type":"field","field":"colors"},"fill_color":{"type":"field","field":"colors"},"hatch_color":{"type":"field","field":"colors"}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p2349","attributes":{"x":{"type":"field","field":"species"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"occurrences"},"line_color":{"type":"field","field":"colors"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"field","field":"colors"},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"field","field":"colors"},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p2350","attributes":{"x":{"type":"field","field":"species"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"occurrences"},"line_color":{"type":"field","field":"colors"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"field","field":"colors"},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"field","field":"colors"},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p2324","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p2338"},{"type":"object","name":"WheelZoomTool","id":"p2339"},{"type":"object","name":"BoxZoomTool","id":"p2340","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p2341","attributes":{"syncable":false,"level":"overlay","visible":false,"left_units":"canvas","right_units":"canvas","bottom_units":"canvas","top_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p2342"},{"type":"object","name":"ResetTool","id":"p2343"},{"type":"object","name":"HelpTool","id":"p2344"},{"type":"object","name":"HoverTool","id":"p2356","attributes":{"renderers":"auto","tooltips":[["Bird type","@species"],["Total observation count","@occurrences"]],"mode":"vline"}}]}},"left":[{"type":"object","name":"LinearAxis","id":"p2333","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p2334","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"NumeralTickFormatter","id":"p2357"},"axis_label":"Observation count","major_label_policy":{"type":"object","name":"AllLabels","id":"p2336"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p2328","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p2329"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p2330"},"axis_label":"Bird species","major_label_orientation":45,"major_label_policy":{"type":"object","name":"AllLabels","id":"p2331"}}}],"center":[{"type":"object","name":"Grid","id":"p2332","attributes":{"axis":{"id":"p2328"}}},{"type":"object","name":"Grid","id":"p2337","attributes":{"dimension":1,"axis":{"id":"p2333"}}},{"type":"object","name":"Legend","id":"p2354","attributes":{"items":[{"type":"object","name":"LegendItem","id":"p2355","attributes":{"label":{"type":"value","value":"Observation count"},"renderers":[{"id":"p2351"}]}}]}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p2361').textContent;
+              const render_items = [{"docid":"873b912a-6a28-48da-88a3-347e00636141","roots":{"p2315":"c4e155f0-2c58-4cfc-bd91-d13843686411"},"root_ids":["p2315"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
